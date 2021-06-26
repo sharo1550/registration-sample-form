@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<title>Page title</title>
+				<style>
+								input {
+												font-size:40px;
+												border: 3px solid blue;
+								}
+								button {
+												font-size:43px;
+								}
+				</style>
+</head>
+<body style="background:red; font-size:43px; padding:15px;border:3px solid white;border-radius:10px">
+				<h1 style="text-align: center;color:#00ff03;text-shadow: 0 0 8px #FF0000, 0 0 15px #0000FF;">Register yourself</h1>
+				<div style="background: yellow; text-align: center;border:5px solid black; padding:25px;color: purple;">
+					<form action="https://formspree.io/your-ID" method="POST" enctype="multipart/form-data">
+	<label for="name" style="text-shadow: 0 0 8px #ffffff, 0 0 15px #ffffff;">Name : </label><input type="text" placeholder="Name" id="name" name="name" required><br><br>
+	<label for="password" style="text-shadow: 0 0 8px #ffffff, 0 0 15px #ffffff;">Password : </label>
+	<input type="text" placeholder="Password" name="password" id="password" required>	<br><br>
+	<label for="password2" style="text-shadow: 0 0 8px #ffffff, 0 0 15px #ffffff;">Re-Password : </label>
+	<input type="text" placeholder="Re-Password" style="width:500px" name="password2" id="password2" required><br><l id="check" style="color:#6e0020"></l>	<br>
+	<label for="email"	style="text-shadow: 0 0 8px #ffffff, 0 0 15px #ffffff;">Email : </label>		
+	<input type="email" placeholder="email" id="email" name="email" required>
+			<br><br>
+	<label for="dateofb" style="text-shadow: 0 0 8px #ffffff, 0 0 15px #ffffff;">D of birth : </label>
+	<input type="date" placeholder="Date of birth" name="date" id="password">	<br><br>
+	<label for="mobile" style="text-shadow: 0 0 8px #ffffff, 0 0 15px #ffffff;">Phone : </label>
+	<input type="number" placeholder="Mobile" name="mobile" id="mobile" required>	<br><br>
+	<button type="submit" onclick="checkp()">submit</button>
+			</form>
+			  </div>
+	<p style="text-align:center;color:white">A sample test.</p>
+					<script>
+	
+function checkp(){
+    var password = document.getElementById("password").value;
+													var password2 = document.getElementById("password2").value;
+		if(password != password2){
+document.getElementById("check").innerHTML="! did not match.<br>";									
+	location. reload();
+	alert("You entered something wrong or missed something ! please check it again.");
+													}else{
+													alert ("sucessfully you have completed your sample registration test.");
+													}
+}
+		</script>
+<!-- created by sharoon of 9th class from sree vishwa shanti high school.-->
+</body>
+</html>
